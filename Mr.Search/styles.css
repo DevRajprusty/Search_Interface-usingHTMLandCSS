@@ -1,0 +1,129 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 50px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+#search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #555;
+}
+
+.suggestions-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+    border-radius: 0 0 10px 10px;
+}
+
+.suggestions-box div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.suggestions-box div:hover {
+    background-color: #f4f4f4;
+}
+
+/* Results page styling */
+.results-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 30%;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.result-item:hover {
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #search-bar {
+        width: 70%;
+    }
+
+    .result-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 500px) {
+    #search-bar {
+        width: 60%;
+    }
+
+    .result-item {
+        width: 100%;
+    }
+}

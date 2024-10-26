@@ -1,0 +1,36 @@
+<!--
+==========================================================
+Project: Searching Mr.
+========================================================== 
+Owner/Coder: Ayushman Tripathy
+Date: 27th September 2024
+==========================================================
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching Mr.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Search with Mr.</h1>
+        <div class="search-box">
+            <input type="text" id="search-bar" placeholder="Search here..." onkeyup="showSuggestions(this.value)">
+            <button id="search-btn">Submit</button>
+            <div id="suggestions" class="suggestions-box"></div>
+        </div>
+    </div>
+
+    <section class="results-container">
+        <h2>Searched Results</h2>
+        <div id="results">
+            <!-- Search results will appear here -->
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
